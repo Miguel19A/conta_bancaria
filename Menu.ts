@@ -1,9 +1,10 @@
 import readlineSync from 'readline-sync';
-
+import { colors } from './src/util/Colors';
 let opcao: number;
 export function main() {
 
     while (true) {
+        console.log(colors.bg.black, colors.fg.yellow);
         console.log(`==================================`);
         console.log(`\tBANCO DO BRAZIL COM Z`);
         console.log(`==================================\n`);
@@ -17,28 +18,28 @@ export function main() {
         console.log(`8- Transferir valores entre Contas`);
         console.log(`9- Sair`);
         console.log(`==================================`);
-
+        console.log(colors.reset);
         console.log(`\tEscolha uma opcao: `);
         opcao = Number(readlineSync.question(`\t\t`));
 
         if (opcao === 1) {
-            console.log(`\n\n**Criar Conta**\n\n`);
+            console.log(`\n\n**Criar Conta**\n\n ${colors.reset}`);
         } else if (opcao === 2) {
-            console.log(`\n\n**Listar todas as contas**\n\n`);
+            console.log(`\n\n**Listar todas as contas**\n\n ${colors.reset}`);
         } else if (opcao === 3) {
-            console.log(`\n\n**Buscar Conta por Número**\n\n`);
+            console.log(`\n\n**Buscar Conta por Número**\n\n ${colors.reset}`);
         } else if (opcao === 4) {
-            console.log(`\n\n**Atualizar Dados da Conta**\n\n`);
+            console.log(`\n\n**Atualizar Dados da Conta**\n\n ${colors.reset}`);
         } else if (opcao === 5) {
-            console.log(`\n\nApagar Conta`);
+            console.log(`\n\nApagar Conta ${colors.reset}`);
         } else if (opcao === 6) {
-            console.log(`\n\n**Sacar**\n\n`);
+            console.log(`\n\n**Sacar**\n\n ${colors.reset}`);
         } else if (opcao === 7) {
             console.log(`\n\n**Depositar**\n\n`);
         } else if (opcao === 8) {
-            console.log(`\n\n**Transferir valores entre Contas**\n\n`);
+            console.log(`\n\n**Transferir valores entre Contas**\n\n ${colors.reset}`);
         } else if (opcao === 9) {
-            console.log(`\n\n**Sair**\n\n`);
+            console.log(`\n\n**Sair**\n\n ${colors.reset, colors.fg.green}`);
             break;
         } else {
             console.log(`Opção inválida!`);

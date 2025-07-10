@@ -1,7 +1,9 @@
 import readlineSync from 'readline-sync';
 import { colors } from './src/util/Colors';
+
+
 let opcao: number;
-export function main() {
+export const  main = () => {
 
     while (true) {
         console.log(colors.bg.black, colors.fg.yellow);
@@ -55,5 +57,7 @@ export function sobre():void {
     console.log(`Email: migueladao007@gmail.com`);
     console.log(`github.com https://github.com/Miguel19A`);
     console.log(`===================================`);
+
 }
+
 main();

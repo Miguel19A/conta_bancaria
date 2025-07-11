@@ -1,7 +1,6 @@
 import readlineSync from 'readline-sync';
 import { colors } from './src/util/Colors';
 
-
 let opcao: number;
 export const  main = () => {
 
@@ -22,6 +21,7 @@ export const  main = () => {
         console.log(`==================================`);
         console.log(colors.reset);
         console.log(`\tEscolha uma opcao: `);
+        
         opcao = Number(readlineSync.question(`\t\t`));
 
         if (opcao === 1) {

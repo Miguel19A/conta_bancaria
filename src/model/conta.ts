@@ -3,6 +3,7 @@ export class Conta {
     private _numero: number;
     private _titular: string;
     public _saldo: number;
+    
 
     constructor(numero: number, titular: string, saldo: number){
         this._numero = numero;

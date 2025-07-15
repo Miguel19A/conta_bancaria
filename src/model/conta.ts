@@ -1,5 +1,11 @@
 
 export abstract class Conta {
+    transferir(contaOrigemTransferencia: Conta, contaDestinoTransferencia: Conta, valor: number) {
+        throw new Error("Method not implemented.");
+    }
+    exibirDados(): void {
+        throw new Error("Method not implemented.");
+    }
     private _numero: number;
     private _titular: string;
     public _saldo: number;
